@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+
+.div1{
+
+    position: relative;
+    background-image: url("dmitry-demidko-z4VuRg-ZOEg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 650px;    
+}
+
+#id2{
+    margin: 0px 0px 0px 200px;
+}
+
+#id1{
+    margin-top: 0px;
+    margin-left: 30px;
+    font-size: 34px;
+    font-family: poor richard;
+    color: dodgerblue;
+}
+
+.div1 .div2{
+    position: absolute;
+    bottom: 520px;
+    background: rgb(100, 100, 100,0.5);  
+    color: #f1f1f1;
+    padding: 20px 0px 20px 20px;
+}
+
+.div1 .div3{
+    position: absolute;
+    bottom: 60px;
+    margin-left: 50px;
+    /*    background: rgb(100,100,100,0.5);*/
+
+}
+
+.div3 p{
+    font-size: 32px;
+    color: dodgerblue;
+    font-family: lucida calligraphy;
+    font-weight: 900;
+}
+
+li{
+    display: inline;
+    color: white;
+    margin-right: 50px;
+    font-family: poor richard;
+    font-size: 22px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.welcome h1{
+    /*    font-size: 2px;*/
+    color: orangered;
+    font-weight: 900;
+    font-size: 44px;
+}
+
+#iframe1,#iframe2{
+    height: 350px;
+    width: 550px;
+}
+
+#iframe1{
+    margin-right: 30px;
+    border: 4px dimgrey solid;
+}
+
+#iframe2{
+    margin-left: 30px;
+    border: 4px dimgrey solid;
+}
+
+.welcome p{
+    text-align: center;
+    margin: 50px 50px 50px 50px;
+    font-size: 23px;
+    font-weight: 400;
+    color: dodgerblue;
+    font-family: Segoe print;
+}
+
+.aboutUs{
+    background-color: silver;
+    border-top-left-radius: 200px;
+    /*
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    */
+}
+
+.aboutUs h1{
+    font-size: 40px;
+    color: orangered;
+    font-weight: 900;
+    font-size: 44px;
+}
+
+#AU1{
+    width: 450px;
+    height: 500px;
+    margin: 0px 0px 0px 150px;
+    padding: 10px 50px 0px 50px;
+}
+
+#AU1 h2{
+    color: #2B80AE;
+    font-family: poor richard;
+}
+
+#AU1 span{
+    font-family: bookman old style;
+    color: dodgerblue;
+    /*    font-weight: 800;*/
+}
+
+#AU1 p{
+    font-size: 18px;
+    font-family: bookman old style;
+}
+
+#AU2 img{
+    margin: -500px 0px 0px 600px;
+    border-radius: 20px;
+    border: 2px dodgerblue solid;
+}
+
+@media only screen and (max-width:1200px){
+
+    *{
+        box-sizing: border-box;
+    }
+
+    #iframe1,#iframe2{
+        width: 500px;
+        height: 300px;
+        margin: 20px 20px 0px 20px;
+    }
+    .welcome p{
+        text-align: justify;
+        margin: 50px 50px 50px 50px;
+        font-size: 20px;
+        font-weight: 400;
+        color: dodgerblue;
+        font-family: Segoe print;
+    }
+
+    .aboutUs{
+        border-top-left-radius: 100px;
+    }
+    
+    #AU1{
+        width: 90%;
+        height: auto;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    #AU2 img{
+        margin: 10px 0px 10px 10px;
+        width: 97%;
+        height: auto;
+    }
+
+}
+
+
+
+
