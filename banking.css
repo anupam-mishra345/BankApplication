@@ -1,9 +1,15 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-image: url(autumn-studio-221wufG10eg-unsplash.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .div1{
-
     position: relative;
     background-image: url("dmitry-demidko-z4VuRg-ZOEg-unsplash.jpg");
     background-size: cover;
@@ -12,9 +18,14 @@
     background-repeat: no-repeat;
     min-height: 650px;    
 }
-
+li:hover{
+    color: orangered;
+}
+#id1:hover{
+    color: orangered;
+}
 #id2{
-    margin: 0px 0px 0px 200px;
+    margin: 0px 0px 0px 300px;
 }
 
 #id1{
@@ -23,6 +34,7 @@
     font-size: 34px;
     font-family: poor richard;
     color: dodgerblue;
+    padding: 10px;
 }
 
 .div1 .div2{
@@ -61,7 +73,9 @@ a{
 }
 
 .welcome h1{
-    /*    font-size: 2px;*/
+    background-color: rgb(0,0,0,0.4);
+    width: 400px;
+    border-radius: 50px;
     color: orangered;
     font-weight: 900;
     font-size: 44px;
@@ -70,16 +84,25 @@ a{
 #iframe1,#iframe2{
     height: 350px;
     width: 550px;
+    transition: transform 1s;
 }
 
 #iframe1{
-    margin-right: 30px;
-    border: 4px dimgrey solid;
+/*    margin-right: 30px;*/
+    margin: 50px 600px 0px 0px;
+    border: 4px orangered solid;
+}
+#iframe1:hover {
+    transform: scale(1.15);
+}
+#iframe2{
+/*    margin-left: 30px;*/
+    margin: -350px 0px 0px 600px;
+    border: 4px orangered solid;
 }
 
-#iframe2{
-    margin-left: 30px;
-    border: 4px dimgrey solid;
+#iframe2:hover {
+    transform: scale(1.15);
 }
 
 .welcome p{
@@ -87,8 +110,14 @@ a{
     margin: 50px 50px 50px 50px;
     font-size: 23px;
     font-weight: 400;
-    color: dodgerblue;
+    color: white;
     font-family: Segoe print;
+    /*    transition: 0s;*/
+}
+.welcome p:hover{
+    background-color: darkslategrey;
+    transform: scale(1);
+    transition-delay: 0.5s;
 }
 
 .aboutUs{
@@ -102,7 +131,9 @@ a{
 }
 
 .aboutUs h1{
-    font-size: 40px;
+    background-color: rgb(0,0,0,0.2);
+    width: 400px;
+    border-radius: 50px;
     color: orangered;
     font-weight: 900;
     font-size: 44px;
@@ -137,6 +168,218 @@ a{
     border: 2px dodgerblue solid;
 }
 
+#AU3 h2{
+    color: #2B80AE;
+    font-family: poor richard;
+}
+
+#AU3{
+    /*    margin: 0px 0px 0px 150px;*/
+    padding: 10px 50px 0px 50px;
+}
+
+#AU3 #img1{
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    margin: 0px 0px 0px 150px;
+}
+#AU3 #AU301{
+    width: 250px;
+    font-size: 18px;
+    font-family: bookman old style;
+    margin: -150px 0px 0px 550px;
+}
+#img2{
+    margin: -140px 0px 0px 950px;
+    border-radius: 10px;
+}
+#AU302{
+    font-size: 17px;
+    font-family: bookman old style;
+    margin: -70px 0px 50px 900px;
+}
+
+.AU3{
+    font-size: 18px;
+    font-family: bookman old style;
+    text-align: justify;
+
+}
+
+#Services h1{
+    background-color: rgb(0,0,0,0.4);
+    width: 400px;
+    border-radius: 50px;
+    color: orangered;
+    font-weight: 900;
+    font-size: 44px;
+}
+#Services div{
+    background-color: skyblue;
+    height: 500px;
+    width: 350px;
+    margin: 50px 50px 50px 50px
+}
+#Services h2{
+    color: darkblue;
+}
+#Services p{
+    font-size: 16px;
+    font-family: bookman old style;
+    margin: 50px 50px 50px 50px;
+    text-align: justify;
+}
+#Services #Sdiv1{
+    border-radius: 20px; 
+}
+#Services #Sdiv2{
+    border-radius: 20px;
+    margin: -550px 0px 0px 500px; 
+}
+#Services #Sdiv3{
+    border-radius: 20px;
+    margin: -500px 0px 0px 950px; 
+}
+
+#career h1{
+    background-color: rgb(0,0,0,0.4);
+    width: 400px;
+    border-radius: 50px;
+    color: orangered;
+    font-weight: 900;
+    font-size: 44px;
+}
+#career p{
+    font-size: 23px;
+    font-family:  Segoe print;
+    text-align: center;
+    color: aliceblue;
+    padding: 50px;
+}
+#career p:hover{
+    background-color: darkslategrey;
+    transition-delay: 0.5s;
+}
+#Cif1{
+    border-radius: 40px;
+    margin-left: -20px;
+}
+#Cif2{
+    border-radius: 40px;
+    margin-left: 100px;
+}
+#Cif3{
+    border-radius: 40px;
+    margin-left: -20px;
+}
+#Cif4{
+    border-radius: 40px;
+    margin-left: 100px;
+}
+#news h1{
+    background-color: rgb(0,0,0,0.4);
+    width: 400px;
+    border-radius: 50px;
+    color: orangered;
+    font-weight: 900;
+    font-size: 44px;
+}
+#news #inp1{
+    height: 45px;
+    width: 500px;
+    font-size: 18px;
+    font-family: bookman old style;
+    padding: 10px 20px 10px 20px;
+}
+
+#news #inp2{
+    height: 45px;
+    width: 150px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: bookman old style;
+    margin-top: 10px;
+}
+#contact h1{
+    background-color: rgb(0,0,0,0.4);
+    width: 400px;
+    border-radius: 50px;
+    color: orangered;
+    font-weight: 900;
+    font-size: 44px;
+}
+#contact input{
+    height: 45px;
+    width: 400px;
+    font-size: 18px;
+    font-family: bookman old style;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+}
+#contact #inp3{
+    height: 100px;
+}
+#contact #inp4{
+    height: 45px;
+    width: 200px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-family: bookman old style;
+}
+#contact #div1{
+    margin: 0px 0px 0px -350px;
+}
+#contact #div2{
+    margin: -370px 0px 0px 450px;
+}
+#contact h2{
+    color: gold;
+    font-family: bookman old style;
+}
+#contact p{
+    color: white;
+    font-size: 16px;
+    font-family: bookman old style;
+    margin-top: -10px;
+}
+#footer{
+    margin-top: 20px;
+    background-image: url(rodion-kutsaev-IJ25m7fXqtk-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+#footer h1{
+    color: #0C489B;
+    font-size: 40px;
+    font-family: bookman old style;
+}
+#footer h3{
+    color: #781247;
+    font-size: 26px;
+    font-family: bookman old style;
+}
+#footer i{
+    color: white;
+    font-size: 30px;
+    margin: 0px 10px 0px 10px;
+}
+#footer p{
+    color: orangered;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: bookman old style;
+    
+}
+
+
 @media only screen and (max-width:1200px){
 
     *{
@@ -144,33 +387,92 @@ a{
     }
 
     #iframe1,#iframe2{
-        width: 500px;
-        height: 300px;
-        margin: 20px 20px 0px 20px;
+        width: 550px;
+        height: 350px;
+        margin: 30px 20px 0px 20px;
     }
     .welcome p{
         text-align: justify;
         margin: 50px 50px 50px 50px;
         font-size: 20px;
         font-weight: 400;
-        color: dodgerblue;
+        color: white;
         font-family: Segoe print;
     }
 
     .aboutUs{
         border-top-left-radius: 100px;
     }
-    
+
     #AU1{
         width: 90%;
         height: auto;
         margin: 0px 0px 0px 0px;
     }
-    
+
     #AU2 img{
         margin: 10px 0px 10px 10px;
         width: 97%;
         height: auto;
+    }
+
+    #AU3{
+        width: 90%;
+        height: auto;
+    }
+    #AU3 #img1{  
+        margin: 0px 0px 0px 100px;
+        /*        margin: auto;*/
+    }
+    #AU3 #AU301{
+        margin: auto;
+        margin-top: 50px;
+        text-align: justify;
+    }
+    #AU3 #img2{
+        /*        margin: auto;*/
+        margin: 50px 0px 0px 200px;
+        border-radius: 10px;
+    }
+    #AU302{
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #Services{
+        width: 100%;
+    }
+    #Services #Sdiv1{
+        margin: auto;
+    }
+    #Services #Sdiv2{
+        margin: auto;
+        margin-top: 50px;
+    }
+    #Services #Sdiv3{
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    #Cif1{
+        margin: auto;
+    }
+    #Cif2{
+        margin: auto;
+        margin-top: 40px;
+    }
+    #Cif3{
+        margin: auto;
+    }
+    #Cif4{
+        margin: auto;
+        margin-top: 40px;
+    }
+    #contact #div1{
+        margin: auto;
+    }
+    #contact #div2{
+        margin: auto;
     }
 
 }
