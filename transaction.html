@@ -1,292 +1,275 @@
 <html>
-    <head>
-        <link rel="icon" href="0.png">
-        <title>OCEAN 2.0 Transaction</title>
-        <style>
-            body{
-                background-image: url("jan-kolar-vLxXvapupqI-unsplash.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: bottom;                
-            }
-            img{
-                margin: 10px 0px 0px 80px;
-                border-radius: 10px;
-            }
-            h3{
-                color: white;
-                font-size: 28px;
-            }
-            #div0{
-                width: 50%;
-                height: 150px;
-                background: rgb(100, 100, 100,0.7);
-                padding: 20px 0px 20px 0px;
-                border-radius: 20px;
-                margin-top: 10px;
-            }
-            #div1{
-                font-weight: 900;
-                width: 350px;
-                height: 50px;
-                background-color: deepskyblue;
-                color: aliceblue;
-                border-radius: 10px;
-                /*                margin: 0px 0px 0px 490px;*/
-            }
-            #div2{
-                font-weight: 900;
-                width: 350px;
-                height: 50px;
-                background-color: coral;
-                color: aliceblue;
-                border-radius: 10px;
-                /*                margin: 0px 0px 0px 490px;*/
-            }
-            #dep1{
-                color: aliceblue;
-                font-size: 18px;
-                height: 40px;
-                width: 180px;
-                margin: 0px 0px 10px -50px;
-                padding-left: 20px;
-            }
-            #dep2{
-                color: aliceblue;
-                font-size: 18px;
-                height: 40px;
-                width: 180px;
-                margin: -40px 0px 0px 150px;
-                text-align: right;
-                padding-right: 20px;
-            }
-            #with1{
-                color: aliceblue;
-                font-size: 18px;
-                height: 40px;
-                width: 180px;
-                margin: 0px 0px 10px -50px;
-                padding-left: 20px;
-            }
-            #with2{
-                color: aliceblue;
-                font-size: 18px;
-                height: 40px;
-                width: 180px;
-                margin: -40px 0px 0px 150px;
-                text-align: right;
-                padding-right: 20px;
-            }
-            #div3{
-                background: rgb(0, 50, 50, 0.6); 
-                width: 100%;
-                color: white;
-                font-size: 20px;
-                width: 400px;
-                border-radius: 10px;
-                margin: 20px 0px 20px 0px;
-                padding: 10px 0px 10px 0px;
-            }
-            #div4{
-                width: 100%;
+  <head>
+    <link rel="icon" href="./assets/bank-application.png" />
+    <title>OCEAN 2.0 Transaction</title>
+    <style>
+      body {
+        background-image: url("./assets/jan-kolar-vLxXvapupqI-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+      }
+      img {
+        margin: 10px 0px 0px 80px;
+        border-radius: 10px;
+      }
+      h3 {
+        color: white;
+        font-size: 28px;
+      }
+      #div0 {
+        width: 50%;
+        height: 150px;
+        background: rgb(100, 100, 100, 0.7);
+        padding: 20px 0px 20px 0px;
+        border-radius: 20px;
+        margin-top: 10px;
+      }
+      #div1 {
+        font-weight: 900;
+        width: 350px;
+        height: 50px;
+        background-color: deepskyblue;
+        color: aliceblue;
+        border-radius: 10px;
+        /*                margin: 0px 0px 0px 490px;*/
+      }
+      #div2 {
+        font-weight: 900;
+        width: 350px;
+        height: 50px;
+        background-color: coral;
+        color: aliceblue;
+        border-radius: 10px;
+        /*                margin: 0px 0px 0px 490px;*/
+      }
+      #dep1 {
+        color: aliceblue;
+        font-size: 18px;
+        height: 40px;
+        width: 180px;
+        margin: 0px 0px 10px -50px;
+        padding-left: 20px;
+      }
+      #dep2 {
+        color: aliceblue;
+        font-size: 18px;
+        height: 40px;
+        width: 180px;
+        margin: -40px 0px 0px 150px;
+        text-align: right;
+        padding-right: 20px;
+      }
+      #with1 {
+        color: aliceblue;
+        font-size: 18px;
+        height: 40px;
+        width: 180px;
+        margin: 0px 0px 10px -50px;
+        padding-left: 20px;
+      }
+      #with2 {
+        color: aliceblue;
+        font-size: 18px;
+        height: 40px;
+        width: 180px;
+        margin: -40px 0px 0px 150px;
+        text-align: right;
+        padding-right: 20px;
+      }
+      #div3 {
+        background: rgb(0, 50, 50, 0.6);
+        width: 100%;
+        color: white;
+        font-size: 20px;
+        width: 400px;
+        border-radius: 10px;
+        margin: 20px 0px 20px 0px;
+        padding: 10px 0px 10px 0px;
+      }
+      #div4 {
+        width: 100%;
+      }
+      #select1 {
+        font-size: 16px;
+        height: 35px;
+        width: 150px;
+        font-weight: 600;
+        padding: 5px 0px 5px 20px;
+        border-width: 0px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      #input1 {
+        font-size: 16px;
+        height: 35px;
+        width: 300px;
+        padding: 5px 20px 5px 20px;
+        border-width: 0px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      #input2 {
+        font-size: 16px;
+        height: 35px;
+        width: 100px;
+        padding: 5px 20px 5px 20px;
+        border-width: 0px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      #input3 {
+        font-size: 16px;
+        height: 35px;
+        width: 100px;
+        font-weight: 600;
+        padding: 5px 10px 5px 10px;
+        background-color: green;
+        border-width: 0px;
+        color: white;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      #div5 {
+        background-color: rgb(0, 0, 0, 0.5);
+        border-radius: 20px;
+        margin-left: 50px;
+      }
+      td {
+        width: 630px;
+      }
+      #td1 tr {
+        margin-left: 50px;
+        /*                margin-right: 50px;*/
+      }
+      #td1 td {
+        color: aliceblue;
+        font-size: 20px;
+        padding: 0px 20px 0px 20px;
+        /*                width: 200px;*/
+        /*                margin-left: 100px;*/
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0, 0.5);
+      }
 
-            }
-            #select1{
-                font-size: 16px;
-                height: 35px;
-                width: 150px;
-                font-weight: 600;
-                padding: 5px 0px 5px 20px;
-                border-width: 0px;
-                border-radius: 5px;
-                margin-top: 20px;
-            }
-            #input1{
-                font-size: 16px;
-                height: 35px;
-                width: 300px;
-                padding: 5px 20px 5px 20px;
-                border-width: 0px;
-                border-radius: 5px;
-                margin-top: 20px;
-            }
-            #input2{
-                font-size: 16px;
-                height: 35px;
-                width: 100px;
-                padding: 5px 20px 5px 20px;
-                border-width: 0px;
-                border-radius: 5px;
-                margin-top: 20px;
-            }
-            #input3{
-                font-size: 16px;
-                height: 35px;
-                width: 100px;
-                font-weight: 600;
-                padding: 5px 10px 5px 10px;
-                background-color: green;
-                border-width: 0px;
-                color: white;
-                border-radius: 5px;
-                margin-top: 20px;
-            }
-            #div5{
-                background-color: rgb(0,0,0,0.5);
-                border-radius: 20px;
-                margin-left: 50px;
+      #div5 h2 {
+        color: deepskyblue;
+      }
 
-            }
-            td{
-                width: 630px;
-            }
-            #td1 tr{
-                margin-left: 50px;
-/*                margin-right: 50px;*/
-            }
-            #td1 td{
-                color: aliceblue;
-                font-size: 20px;
-                padding: 0px 20px 0px 20px;
-                /*                width: 200px;*/
-                /*                margin-left: 100px;*/
-                border-radius: 10px;
-                background-color: rgb(0,0,0,0.5);
-            }
+      #div6 {
+        background-color: rgb(0, 0, 0, 0.5);
+        border-radius: 20px;
+        margin-left: 50px;
+        /*                margin: -48px 50px 0px 700px;*/
+      }
 
-            #div5 h2{
-                color: deepskyblue;
-            }
+      #td2 tr {
+        margin-left: 50px;
+        /*                margin-right: 50px;*/
+      }
+      #td2 td {
+        color: aliceblue;
+        font-size: 20px;
+        padding: 0px 20px 0px 20px;
+        /*                width: 00px;*/
+        /*                margin-left: 100px;*/
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0, 0.5);
+      }
 
-            #div6{
-                background-color: rgb(0,0,0,0.5);
-                border-radius: 20px;
-                margin-left: 50px;
-                /*                margin: -48px 50px 0px 700px;*/
-            }
+      #div6 h2 {
+        color: coral;
+      }
 
-            
-            #td2 tr{
-                margin-left: 50px;
-/*                margin-right: 50px;*/
-            }
-            #td2 td{
-                color: aliceblue;
-                font-size: 20px;
-                padding: 0px 20px 0px 20px;
-                /*                width: 00px;*/
-                /*                margin-left: 100px;*/
-                border-radius: 10px;
-                background-color: rgb(0,0,0,0.5);
-            }
+      #tr2 {
+        width: 50%;
+        float: left;
+      }
+      #tr3 {
+        width: 50%;
+        float: right;
+      }
+      #tr2 table {
+        /*                margin-left: 50px;*/
+        text-align: center;
+      }
+      #tr3 table {
+        /*                margin-left: 50px;*/
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./assets/file.png" alt="" width="170px" height="80px" />
 
-            #div6 h2{
-                color: coral;
-            }
-
-            
-            #tr2{
-                width: 50%;
-                float: left;
-            }
-            #tr3{
-                width: 50%;
-                float: right;
-            }
-            #tr2 table{
-/*                margin-left: 50px;*/
-                text-align: center;
-            }
-            #tr3 table{
-/*                margin-left: 50px;*/
-                text-align: center;
-            }
-
-
-        </style>
-    </head>
-    <body>
-
-        <img src="file.png" alt="" width="170px" height="80px">
-
-        <center>
-            <div id="div0">
-                <h3>Available Balance is</h3>
-                <h3 id="avbal">0000.00</h3>
-            </div>
-        </center>
-        <br>
-        <center>
-            <div id="div1">
-                <table>
-                    <td id="dep1">Deposit</td>
-                    <td id="dep2">0000.00</td>
-                </table>
-            </div>
-            <br>
-            <div id="div2">
-                <table>
-                    <td id="with1">Withdrawl</td>
-                    <td id="with2">0000.00</td>
-                </table>
-            </div>
-        </center>
-        <center>
-            <div id="div3">
-                <p>CRN                : 001</p>
-                <p>Account Holder Name : ANUPAM MISHRA</p>
-                <p>Account Number     : 123123123</p>
-            </div>
-        </center>
-        <center>
-            <div id="div4">
-                <select name="Transaction" id="select1">
-                    <option value="Dep">Deposit</option>
-                    <option value="With">Withdrawl</option>
-                </select>
-                <input type="text" id="input1" placeholder="Add Description">
-                <input type="number" id="input2" placeholder="Value">
-                <input type="submit" value="PROCEED" id="input3" onclick="trans()">
-            </div>
-        </center>
-        <br><br>
-        <!--
+    <center>
+      <div id="div0">
+        <h3>Available Balance is</h3>
+        <h3 id="avbal">0000.00</h3>
+      </div>
+    </center>
+    <br />
+    <center>
+      <div id="div1">
+        <table>
+          <td id="dep1">Deposit</td>
+          <td id="dep2">0000.00</td>
+        </table>
+      </div>
+      <br />
+      <div id="div2">
+        <table>
+          <td id="with1">Withdrawl</td>
+          <td id="with2">0000.00</td>
+        </table>
+      </div>
+    </center>
+    <center>
+      <div id="div3">
+        <p>CRN : 001</p>
+        <p>Account Holder Name : ANUPAM MISHRA</p>
+        <p>Account Number : 123123123</p>
+      </div>
+    </center>
+    <center>
+      <div id="div4">
+        <select name="Transaction" id="select1">
+          <option value="Dep">Deposit</option>
+          <option value="With">Withdrawl</option>
+        </select>
+        <input type="text" id="input1" placeholder="Add Description" />
+        <input type="number" id="input2" placeholder="Value" />
+        <input type="submit" value="PROCEED" id="input3" onclick="trans()" />
+      </div>
+    </center>
+    <br /><br />
+    <!--
 <iframe src="transaction.html#div5" scrolling="no" frameborder="0" width="49%"></iframe>
 <iframe src="withdrawl.html" frameborder="0" width="49%"></iframe>
 -->
 
-        <table id="tr1">
-            <tr>
-                <td>
-                    <div id="div5">
-                        <center><h2>Deposit</h2></center>
-                    </div>
-                </td>
-                <td>
-                    <div id="div6">
-                        <center><h2>Withdrawl</h2></center>
-                    </div>
-                </td>
-            </tr>
-        </table>
+    <table id="tr1">
+      <tr>
+        <td>
+          <div id="div5">
+            <center><h2>Deposit</h2></center>
+          </div>
+        </td>
+        <td>
+          <div id="div6">
+            <center><h2>Withdrawl</h2></center>
+          </div>
+        </td>
+      </tr>
+    </table>
 
-        <div id="tr2">
-            <table id="td1">
+    <div id="tr2">
+      <table id="td1"></table>
+    </div>
 
-            </table>
-        </div>
-
-        <div id="tr3">
-            <table id="td2">
-
-            </table>
-
-        </div>
-
-
-
-    </body>
-    <script src="transact.js">
-
-    </script>
+    <div id="tr3">
+      <table id="td2"></table>
+    </div>
+  </body>
+  <script src="transact.js"></script>
 </html>

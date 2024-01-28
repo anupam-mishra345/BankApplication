@@ -1,16 +1,15 @@
 <html>
-    <head>
-        <link rel="icon" href="0.png">
-        <title>OCEAN 2.0 Login</title>
-        <style>
-            body{
-                background-image:url(india-rupee-banknote-904735.jpg);
-                background-size: cover;
-                background-position: bottom;
-                background-attachment: fixed;
-
-            }
-            /*
+  <head>
+    <link rel="icon" href="./assets/bank-application.png" />
+    <title>OCEAN 2.0 Login</title>
+    <style>
+      body {
+        background-image: url(./assets/india-rupee-banknote-904735.jpg);
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: fixed;
+      }
+      /*
             h1{
             color: dodgerblue;
             font-family: poor richard;
@@ -18,142 +17,155 @@
             font-size: 45px;
             }
             */
-            img{
-                border-radius: 20px;
-                margin: 10px 0px 0px 50px;
-            }
-            legend{
-                color: #F1CB3A;
-                font-family: Lucida calligraphy;
-                margin-left: -80px;
-                font-size: 28px;
-                font-weight: 900;
-            }
-            .div1{
+      img {
+        border-radius: 20px;
+        margin: 10px 0px 0px 50px;
+      }
+      legend {
+        color: #f1cb3a;
+        font-family: Lucida calligraphy;
+        margin-left: -80px;
+        font-size: 28px;
+        font-weight: 900;
+      }
+      .div1 {
+        margin: 50px 0px 0px 850px;
+        width: 400px;
+        border-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      td {
+        color: white;
+        font-size: 24px;
+        font-family: poor richard;
+      }
+      table {
+        margin-left: 20px;
+      }
+      tr {
+        margin-top: 50px;
+      }
+      .input1 {
+        border-radius: 10px;
+        height: 30px;
+        font-family: gabriola;
+        font-size: 24px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px white solid;
+        color: black;
+        padding-left: 15px;
+        margin: -25px 0px 25px 0px;
+      }
 
-                margin: 50px 0px 0px 850px;
-                width: 400px;
-                border-radius: 30px;
-                border-top-right-radius: 30px;
-            }
-            td{
-                color: white;
-                font-size: 24px;
-                font-family: poor richard;
+      .input2 {
+        width: 100px;
+        border-radius: 5px;
+        font-size: 24px;
+        background: transparent;
+        color: #f1cb3a;
+        font-family: poor richard;
+        font-size: 24px;
+        padding-left: 15px;
+        margin: -20px 0px 10px 20px;
+      }
+      h5 {
+        color: black;
+        font-size: 24px;
+      }
+      fieldset {
+        border: 4px solid white;
+        border-radius: 30px;
+      }
 
-            }
-            table{
-                margin-left: 20px;
-            }
-            tr{
-                margin-top: 50px;
-            }
-            .input1{
-                border-radius: 10px;
-                height: 30px;
-                font-family: gabriola;
-                font-size: 24px;
-                background: transparent;
-                border: none;
-                border-bottom: 2px white solid;
-                color: black;
-                padding-left: 15px;
-                margin: -25px 0px 25px 0px;
-            }
-            
-            .input2{
-                width: 100px;
-                border-radius: 5px;
-                font-size: 24px;
-                background: transparent;
-                color: #F1CB3A;
-                font-family: poor richard;
-                font-size: 24px;
-                padding-left: 15px;
-                margin: -20px 0px 10px 20px;
-            }
-            h5{
-               color: black;
-                font-size: 24px;
-            }
-            fieldset{
-                border: 4px solid white;
-                border-radius: 30px;
-            }
-
-            @media only screen and (max-width:1300px){
-                .div1{
-
-                    margin: 50px 50px 0px 50px;
-                }
-                body{
-                    background-position: right;
-                }
-            }            
-
-        </style>
-    </head>
-
-    <body>
-        <br>
-
-        <!--        <h1 id="h1">OCEAN BANK</h1>-->
-        <img src="file.png" alt="" height="110px" width="220px">
-        <center>
-            <div class="div1" >
-
-
-                <fieldset>
-                    <legend>Login Section</legend>
-                    <br><br>
-                    <table>
-                        <tr>
-                            <td>
-                                <h5>Username</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3"><input type="text" id="user" class="input1"></td>
-                        </tr>
-                        <tr><td><br></td></tr>
-                        <tr>
-                            <td>
-                                <h5>Password</h5>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3"><input type="password" id="pwd" class="input1"></td>
-                        </tr>
-                        <tr><td><br></td></tr>
-                        <tr>
-                            
-                            <td><input type="submit" value="login" id="btn" class="input2" onclick="login()"></td>
-                            <td><input type="submit" value="back" id="bck" class="input2" onclick="back()"></td>
-                        </tr>
-
-
-                    </table>
-
-                    <br><br>
-                </fieldset>
-            </div>
-        </center>
-    </body>
-    <script>
-        function back(){
-            location.href="Oceanbank.html";
+      @media only screen and (max-width: 1300px) {
+        .div1 {
+          margin: 50px 50px 0px 50px;
         }
-        function login(){
-            var user1=document.getElementById("user").value
-            var pwd1=Number(document.getElementById("pwd").value)
-
-            if((user1==='anupam')&&(pwd1===12345)){
-                location.href="transaction.html";
-            }
-            else{
-                alert("Username or password are wrong.")
-            }
+        body {
+          background-position: right;
         }
-    </script>
+      }
+    </style>
+  </head>
 
+  <body>
+    <br />
+
+    <!--        <h1 id="h1">OCEAN BANK</h1>-->
+    <img src="./assets/file.png" alt="" height="110px" width="220px" />
+    <center>
+      <div class="div1">
+        <fieldset>
+          <legend>Login Section</legend>
+          <br /><br />
+          <table>
+            <tr>
+              <td>
+                <h5>Username</h5>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <input type="text" id="user" class="input1" />
+              </td>
+            </tr>
+            <tr>
+              <td><br /></td>
+            </tr>
+            <tr>
+              <td>
+                <h5>Password</h5>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <input type="password" id="pwd" class="input1" />
+              </td>
+            </tr>
+            <tr>
+              <td><br /></td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="submit"
+                  value="login"
+                  id="btn"
+                  class="input2"
+                  onclick="login()"
+                />
+              </td>
+              <td>
+                <input
+                  type="submit"
+                  value="back"
+                  id="bck"
+                  class="input2"
+                  onclick="back()"
+                />
+              </td>
+            </tr>
+          </table>
+
+          <br /><br />
+        </fieldset>
+      </div>
+    </center>
+  </body>
+  <script>
+    function back() {
+      location.href = "Oceanbank.html";
+    }
+    function login() {
+      var user1 = document.getElementById("user").value;
+      var pwd1 = Number(document.getElementById("pwd").value);
+
+      if (user1 === "anupam" && pwd1 === 12345) {
+        location.href = "transaction.html";
+      } else {
+        alert("Username or password are wrong.");
+      }
+    }
+  </script>
 </html>
