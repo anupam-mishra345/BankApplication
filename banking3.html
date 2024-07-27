@@ -1,11 +1,16 @@
 <html>
   <head>
     <title>Cash Management</title>
-    <link rel="icon" href="./assets/bank-application.png" />
+    <link rel="icon" href="./assets/BankApplication.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script>
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
+    </script>
     <style>
       * {
         box-sizing: border-box;
@@ -27,7 +32,7 @@
         min-height: 650px;
       }
       #id2 {
-        margin: 0px 0px 0px 250px;
+        margin-left: auto;
       }
       #id1 {
         margin-top: 0px;
@@ -35,6 +40,7 @@
         font-size: 34px;
         font-family: poor richard;
         color: gold;
+        display: inline-flex;
       }
       .div1 .div2 {
         position: absolute;
@@ -42,6 +48,7 @@
         background: rgb(100, 100, 100, 0.5);
         color: #f1f1f1;
         padding: 20px 0px 20px 20px;
+        width: 100%;
       }
       .div1 .div3 {
         position: absolute;
@@ -68,6 +75,8 @@
         font-size: 22px;
       }
       a {
+        margin-top: auto;
+        margin-bottom: auto;
         text-decoration: none;
       }
 
@@ -131,21 +140,22 @@
   <body>
     <div class="div1">
       <div class="div2">
-        <div class="div22">
-          <a href="Oceanbank.html"
-            ><li id="id1"><b>OCEAN BANK 2.0</b></li></a
+        <div class="div22" style="display: flex; margin-top: auto">
+          <a href="banking.html"
+            ><li id="id1">
+              <img src="assets/BankApplication.png" height="50px" alt="" /><b
+                style="margin: auto 0 auto 20px"
+                >CAPITAL</b
+              >
+            </li></a
           >
-          <a href="Oceanbank.html#wel" class="li1" id="id2"><li>Home</li></a>
-          <a href="Oceanbank.html#AU" class="li1" id="id3"><li>About Us</li></a>
-          <a href="Oceanbank.html#Services" class="li1" id="id4"
+          <a href="Capital.html#wel" class="li1" id="id2"><li>Home</li></a>
+          <a href="Capital.html#AU" class="li1" id="id3"><li>About Us</li></a>
+          <a href="Capital.html#Services" class="li1" id="id4"
             ><li>Services</li></a
           >
-          <a href="Oceanbank.html#career" class="li1" id="id5"
-            ><li>Career</li></a
-          >
-          <a href="Oceanbank.html#news" class="li1" id="id6"
-            ><li>Contact</li></a
-          >
+          <a href="Capital.html#career" class="li1" id="id5"><li>Career</li></a>
+          <a href="Capital.html#news" class="li1" id="id6"><li>Contact</li></a>
           <a href="login.html" class="li1" id="id7"><li>Login</li></a>
         </div>
       </div>
@@ -160,7 +170,7 @@
     <div id="cash">
       <center><h1>Cash Management</h1></center>
       <p>
-        Ocean Bank 2.0 offers you complete Cash Management Services to fit your
+        CAPITAL offers you complete Cash Management Services to fit your
         company's needs. Our Cash Management Systems help you manage your
         accounts anywhere within the United States and internationally. With
         this capability and the easy-to-use Internet product, banking is just a
@@ -191,7 +201,7 @@
 
     <div id="footer">
       <br /><br />
-      <center><h1>Ocean Bank 2.0</h1></center>
+      <center><h1>CAPITAL</h1></center>
       <center><h3>We are Social</h3></center>
       <center>
         <i class="fa fa-facebook"></i>
@@ -200,7 +210,7 @@
       </center>
       <center>
         <p>
-          &copy; 2020 Ocean Bank 2.0. All rights reserved | Designed by
+          &copy; 2020 CAPITAL. All rights reserved | Designed by
           <em><u>Anupam Mishra</u></em>
         </p>
       </center>

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   background-image: url(./assets/autumn-studio-221wufG10eg-unsplash.jpg);
@@ -25,7 +26,7 @@ li:hover {
   color: orangered;
 }
 #id2 {
-  margin: 0px 0px 0px 250px;
+  margin-left: auto;
 }
 
 #id1 {
@@ -35,6 +36,7 @@ li:hover {
   font-family: poor richard;
   color: dodgerblue;
   padding: 10px;
+  display: inline-flex;
 }
 
 .div1 .div2 {
@@ -42,6 +44,7 @@ li:hover {
   bottom: 520px;
   background: rgb(100, 100, 100, 0.5);
   color: #f1f1f1;
+  width: 100%;
   padding: 20px 0px 20px 20px;
 }
 
@@ -68,6 +71,8 @@ li {
 }
 
 a {
+  margin-top: auto;
+  margin-bottom: auto;
   text-decoration: none;
 }
 
@@ -165,7 +170,6 @@ a {
 #AU2 img {
   margin: -500px 0px 0px 600px;
   border-radius: 20px;
-  border: 2px dodgerblue solid;
 }
 
 #AU3 h2 {
